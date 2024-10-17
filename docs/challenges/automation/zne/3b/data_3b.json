@@ -1,0 +1,964 @@
+{
+  "num_qubits_list": [
+    4,
+    8,
+    16
+  ],
+  "depths": [
+    4,
+    8,
+    16,
+    32,
+    64
+  ],
+  "extrapolators": [
+    "exponential",
+    "polynomial_degree_2",
+    "linear",
+    [
+      "exponential",
+      "linear"
+    ]
+  ],
+  "estimator_options": {
+    "exponential": {
+      "_VERSION": 2,
+      "environment": {
+        "log_level": "WARNING",
+        "callback": null,
+        "job_tags": null
+      },
+      "simulator": {},
+      "default_shots": 1000,
+      "optimization_level": 0,
+      "resilience_level": 0,
+      "dynamical_decoupling": {},
+      "resilience": {
+        "measure_mitigation": true,
+        "measure_noise_learning": {},
+        "zne_mitigation": true,
+        "zne": {
+          "extrapolator": "exponential"
+        },
+        "pec": {},
+        "layer_noise_learning": {}
+      },
+      "execution": {},
+      "twirling": {}
+    },
+    "polynomial_degree_2": {
+      "_VERSION": 2,
+      "environment": {
+        "log_level": "WARNING",
+        "callback": null,
+        "job_tags": null
+      },
+      "simulator": {},
+      "default_shots": 1000,
+      "optimization_level": 0,
+      "resilience_level": 0,
+      "dynamical_decoupling": {},
+      "resilience": {
+        "measure_mitigation": true,
+        "measure_noise_learning": {},
+        "zne_mitigation": true,
+        "zne": {
+          "extrapolator": "polynomial_degree_2"
+        },
+        "pec": {},
+        "layer_noise_learning": {}
+      },
+      "execution": {},
+      "twirling": {}
+    },
+    "linear": {
+      "_VERSION": 2,
+      "environment": {
+        "log_level": "WARNING",
+        "callback": null,
+        "job_tags": null
+      },
+      "simulator": {},
+      "default_shots": 1000,
+      "optimization_level": 0,
+      "resilience_level": 0,
+      "dynamical_decoupling": {},
+      "resilience": {
+        "measure_mitigation": true,
+        "measure_noise_learning": {},
+        "zne_mitigation": true,
+        "zne": {
+          "extrapolator": "linear"
+        },
+        "pec": {},
+        "layer_noise_learning": {}
+      },
+      "execution": {},
+      "twirling": {}
+    },
+    "('exponential', 'linear')": {
+      "_VERSION": 2,
+      "environment": {
+        "log_level": "WARNING",
+        "callback": null,
+        "job_tags": null
+      },
+      "simulator": {},
+      "default_shots": 1000,
+      "optimization_level": 0,
+      "resilience_level": 0,
+      "dynamical_decoupling": {},
+      "resilience": {
+        "measure_mitigation": true,
+        "measure_noise_learning": {},
+        "zne_mitigation": true,
+        "zne": {
+          "extrapolator": [
+            "exponential",
+            "linear"
+          ]
+        },
+        "pec": {},
+        "layer_noise_learning": {}
+      },
+      "execution": {},
+      "twirling": {}
+    }
+  },
+  "batch_id": null,
+  "job_ids": [
+    "fe6d86e9-06a4-40f3-ae6e-31aa7d43ec83",
+    "3713c011-16b7-404e-a771-0812962dfba3",
+    "7939d5af-95bc-4cb4-a119-a4fc255dc079",
+    "09c1d62f-4a39-47c6-aa2d-823b4b84413b"
+  ],
+  "backend_name": "aer_simulator_matrix_product_state",
+  "timestamp": "2024-06-27T14:37:11.222476+00:00",
+  "results": {
+    "pub_0": {
+      "num_qubits": 4,
+      "depth": 4,
+      "physical_circuit": "{\"__type__\": \"QuantumCircuit\", \"__value__\": \"eJwL9Az29gzhZmRkZIAAxtRCBu40Bg4gk4UBAZhAUlC2eHJmUXJpZomuoZmZzQSIWHVtISNYCyNjIQMqYEQyAgSY4TKsaCrQQYR7YklqIVgBG5ohaOYzOkfB1DIgNDDjMTvUGK4hDSrEYQwGl+3hAhbNL2YcUGE/ABeQ0HUJ+a3IeYAE4xlxG3+38FzaHiFsxhMdMswkhAwTQgNxTmfC7XSu9nXMfr4cOEKGOPeAUwoTrYOSDt4lznhm3Maz3ntwa+VRJizGs0NFWBiwA6fEoqLM1CJEwicrovFkAZhihMC8XVtXXz6/nzrxhmH8jZtrs79XXiDFeDzxhmH8gYNbhFZN3bV/gJIpfu8S5x5oAUdi4UnjoKQ4C2AYH2DT+9S18CUpIQNN9yQUngwM/5EATAEAtMXEjA==\"}",
+      "physical_observable": {
+        "paulis": [
+          "IIZZ",
+          "IZZI",
+          "ZZII",
+          "ZIIZ"
+        ],
+        "coeffs": [
+          "(0.25+0j)",
+          "(0.25+0j)",
+          "(0.25+0j)",
+          "(0.25+0j)"
+        ]
+      },
+      "final_qubit_layout": null,
+      "circuit_parameters": [
+        0.3,
+        -1.4464727375963786,
+        -2.8841484100105235,
+        -3.03774645687452,
+        1.9683349641197863
+      ],
+      "expvals": {
+        "exponential": 1.0,
+        "polynomial_degree_2": 1.0,
+        "linear": 1.0,
+        "('exponential', 'linear')": 1.0
+      },
+      "job_ids": {
+        "exponential": "fe6d86e9-06a4-40f3-ae6e-31aa7d43ec83",
+        "polynomial_degree_2": "3713c011-16b7-404e-a771-0812962dfba3",
+        "linear": "7939d5af-95bc-4cb4-a119-a4fc255dc079",
+        "('exponential', 'linear')": "09c1d62f-4a39-47c6-aa2d-823b4b84413b"
+      }
+    },
+    "pub_1": {
+      "num_qubits": 4,
+      "depth": 8,
+      "physical_circuit": "{\"__type__\": \"QuantumCircuit\", \"__value__\": \"eJwL9Az29gzhZmRkZIAAxtRCBu40Bg4gk4UBAZhAUlC2ZnJmUXJpZomuoZm5zQKIWHVtISNYCyNjIQMqYEQyAgSY4TKsaCrQQYR7YklqIVgBG5ohaOYzOkfB1DIgNDDjMTvUGK4hDSrEYQwGl+3hAhbNL2YcUGE/ABeQ0HUJ+a3IeYAE4xlxG3+38FzaHiFsxhMdMswkhAwTQgNxTmfC7XSu9nXMfr4cOEKGOPeAUwoTrYNyhKUcOsQuccYz4zae9d6DWyuPMlEUWSM3MQ/d2GWHirAwYAdOiUVFmalFiLxIVkTjyZUwxQiBebu2rr58fj914g3D+Bs312Z/r7xAivF44g3D+AMHtwitmrpr/wAlU/zeJc491CxzMdwzjGKX4lyJYXyATe9T18KXpEQWNctc/N4lzj2DNDGT2KwdQSmHhGYtA8N/JABTAACf1WWw\"}",
+      "physical_observable": {
+        "paulis": [
+          "IIZZ",
+          "IZZI",
+          "ZZII",
+          "ZIIZ"
+        ],
+        "coeffs": [
+          "(0.25+0j)",
+          "(0.25+0j)",
+          "(0.25+0j)",
+          "(0.25+0j)"
+        ]
+      },
+      "final_qubit_layout": null,
+      "circuit_parameters": [
+        0.3,
+        -1.4464727375963786,
+        -2.8841484100105235,
+        -3.03774645687452,
+        1.9683349641197863
+      ],
+      "expvals": {
+        "exponential": 1.0,
+        "polynomial_degree_2": 1.0,
+        "linear": 1.0,
+        "('exponential', 'linear')": 1.0
+      },
+      "job_ids": {
+        "exponential": "fe6d86e9-06a4-40f3-ae6e-31aa7d43ec83",
+        "polynomial_degree_2": "3713c011-16b7-404e-a771-0812962dfba3",
+        "linear": "7939d5af-95bc-4cb4-a119-a4fc255dc079",
+        "('exponential', 'linear')": "09c1d62f-4a39-47c6-aa2d-823b4b84413b"
+      }
+    },
+    "pub_2": {
+      "num_qubits": 4,
+      "depth": 16,
+      "physical_circuit": "{\"__type__\": \"QuantumCircuit\", \"__value__\": \"eJwL9Az29gzhZmRkZIAAxtRCBu40Bg4gk4UBAZhAUlC2b3JmUXJpZomuoZmFzQaIWHVtISNYCyNjIQMqYEQyAgSY4TKsaCrQQYR7YklqIVgBG5ohaOYzOkfB1DIgNDDjMTvUGK4hDSrEYQwGl+3hAhbNL2YcUGE/ABeQ0HUJ+a3IeYAE4xlxG3+38FzaHiFsxhMdMswkhAwTQgNxTmfC7XSu9nXMfr4cOEKGOPeAUwoTrYNyhKUcOsQuccYz4zae9d6DWyuPMlEUWaOJGb97RhMzTGA0MY8m5tHEPJqYiXbPCIxddqgICwN24JRYVJSZWoTIi2RFNJ5cCVOMEJi3a+vqy+f3UyfeMIy/cXNt9vfKC6QYjyfeMIw/cHCL0Kqpu/YPUDLF713i3EPNMhfDPcModinOlRjGB9j0PnUtfElKZFGzzMXvXeLcM5qYaeTd0cRMTe8S557RxEwj744mZmp6lzj3DNLETOJQ8AhKOSQMBTMw/EcCMAUAeyin2A==\"}",
+      "physical_observable": {
+        "paulis": [
+          "IIZZ",
+          "IZZI",
+          "ZZII",
+          "ZIIZ"
+        ],
+        "coeffs": [
+          "(0.25+0j)",
+          "(0.25+0j)",
+          "(0.25+0j)",
+          "(0.25+0j)"
+        ]
+      },
+      "final_qubit_layout": null,
+      "circuit_parameters": [
+        0.3,
+        -1.4464727375963786,
+        -2.8841484100105235,
+        -3.03774645687452,
+        1.9683349641197863
+      ],
+      "expvals": {
+        "exponential": 1.0,
+        "polynomial_degree_2": 1.0,
+        "linear": 1.0,
+        "('exponential', 'linear')": 1.0
+      },
+      "job_ids": {
+        "exponential": "fe6d86e9-06a4-40f3-ae6e-31aa7d43ec83",
+        "polynomial_degree_2": "3713c011-16b7-404e-a771-0812962dfba3",
+        "linear": "7939d5af-95bc-4cb4-a119-a4fc255dc079",
+        "('exponential', 'linear')": "09c1d62f-4a39-47c6-aa2d-823b4b84413b"
+      }
+    },
+    "pub_3": {
+      "num_qubits": 4,
+      "depth": 32,
+      "physical_circuit": "{\"__type__\": \"QuantumCircuit\", \"__value__\": \"eJwL9Az29gzhZmRkZIAAxtRCBu40Bg4gk4UBAZhAUlD21OTMouTSzBJdQzNLmwMQseraQkawFkbGQgZUwIhkBAgww2VY0VSggwj3xJLUQrACNjRD0MxndI6CqWVAaGDGY3aoMVxDGlSIwxgMLtvDBSyaX8w4oMJ+AC4goesS8luR8wAJxjPiNv5u4bm0PULYjCc6ZJhJCBkmhAbinM6E2+lc7euY/Xw5cIQMce4BpxQmWgflCEs5dIhd4oxnxm08670Ht1YeZaIoskYTM373jCZmmMBoYh5NzKOJeTQxE+2e0cRMnHdHEzM1vUuce0YTM428O5qYqeld4twzmphp5N3RxExN7xLnntHETCPvjiZmanqXOPfQLzEP3dhlh4qwMGAHTolFRZmpRYi8SFZE48mVMMUIgXm7tq6+fH4/deINw/gbN9dmf6+8QIrxeOINw/gDB7cIrZq6a/8AJVP83iXOPdQsczHcM4xil+JciWF8gE3vU9fCl6REFjXLXPzeJc49o4mZRt4dTczU9C5x7hlNzDTy7mhipqZ3iXPPaGKmkXdHEzM1vUuce0YTM428O5qYqeld4twzmphp5N3RxExN7xLnntHETCPvjiZmanqXOPcM0sRM4pLjEZRySFhyzMDwHwnAFAAACDcsJg==\"}",
+      "physical_observable": {
+        "paulis": [
+          "IIZZ",
+          "IZZI",
+          "ZZII",
+          "ZIIZ"
+        ],
+        "coeffs": [
+          "(0.25+0j)",
+          "(0.25+0j)",
+          "(0.25+0j)",
+          "(0.25+0j)"
+        ]
+      },
+      "final_qubit_layout": null,
+      "circuit_parameters": [
+        0.3,
+        -1.4464727375963786,
+        -2.8841484100105235,
+        -3.03774645687452,
+        1.9683349641197863
+      ],
+      "expvals": {
+        "exponential": 1.0,
+        "polynomial_degree_2": 1.0,
+        "linear": 1.0,
+        "('exponential', 'linear')": 1.0
+      },
+      "job_ids": {
+        "exponential": "fe6d86e9-06a4-40f3-ae6e-31aa7d43ec83",
+        "polynomial_degree_2": "3713c011-16b7-404e-a771-0812962dfba3",
+        "linear": "7939d5af-95bc-4cb4-a119-a4fc255dc079",
+        "('exponential', 'linear')": "09c1d62f-4a39-47c6-aa2d-823b4b84413b"
+      }
+    },
+    "pub_4": {
+      "num_qubits": 4,
+      "depth": 64,
+      "physical_circuit": "{\"__type__\": \"QuantumCircuit\", \"__value__\": \"eJztnLsvBFEUxu+d8Vh0Kq2EUkIUFBKJR0SEECSiE9lNNqrZUIioFCqlRKVHqGg2EqvQItEgIRoJf4FC4bF2d9i1k284x/M71ebOvSff757fTLlDvcN9vSNV1lrzUjbqmaqYiTz9LDF+Oc+PMjvqJ+OJyZn4dENTS2Pb8cvi3Lxn00es9czbsq9aPJebe1KatyO/xnompqNeekNZXpO8/rZzPLvX+AfcgN6jzbkDscxSpDldJ+25hdaFm5VUXXkqt1DT0DVyX1uRCtHeFm9/4R3Gdqvfaw/fjBviZhz/ABbdKR69cnHLHeiPFLkZLE/aFEf7Kv+ZOV8wXay9W7x96eXV+dqB86lhUebgPJQ5u0CZKTNlpsxwHsqM4VJmSVwsD2VWwqXMkrhYHsqshEuZJXGxPJRZCZcyS+JieSizEi5llsTF8lBmJVzKLImL5aHMSriUWRIXy0OZlXApsyQulocyK+FSZklcLA9lVsKlzJK4WB7KrIRLmSVxsTyUWQmXMkviYnm+TubfO93yzEqJeb86JhKJeDThv4sfGnTAW5nd7C+sJnc2To72ZOZW0P70bHPqbvY4TPuAuRW0T+1vV68vJ/e+SdNgXCyP5De3IM8fmu6n38qC9oNtS9fd3m2YYUl+c4NxsTyUWQmXMkviYnkosxIuZZbExfJQZiVcyiyJi+WhzEq4lFkSF8tDmZVwKbMkLpaHMivhUmZJXCwPZVbCpcySuFgeyqyES5klcbE8lFkJlzJL4mJ5KLMSLmWWxMXyUGYlXMosiYvlocxKuJRZEhfLQ5mVcCmzJC6WhzIr4VJmSVwszw+VOeRfKP8jc0L8hbIxD68qu+ER/R0zmg==\"}",
+      "physical_observable": {
+        "paulis": [
+          "IIZZ",
+          "IZZI",
+          "ZZII",
+          "ZIIZ"
+        ],
+        "coeffs": [
+          "(0.25+0j)",
+          "(0.25+0j)",
+          "(0.25+0j)",
+          "(0.25+0j)"
+        ]
+      },
+      "final_qubit_layout": null,
+      "circuit_parameters": [
+        0.3,
+        -1.4464727375963786,
+        -2.8841484100105235,
+        -3.03774645687452,
+        1.9683349641197863
+      ],
+      "expvals": {
+        "exponential": 1.0,
+        "polynomial_degree_2": 1.0,
+        "linear": 1.0,
+        "('exponential', 'linear')": 1.0
+      },
+      "job_ids": {
+        "exponential": "fe6d86e9-06a4-40f3-ae6e-31aa7d43ec83",
+        "polynomial_degree_2": "3713c011-16b7-404e-a771-0812962dfba3",
+        "linear": "7939d5af-95bc-4cb4-a119-a4fc255dc079",
+        "('exponential', 'linear')": "09c1d62f-4a39-47c6-aa2d-823b4b84413b"
+      }
+    },
+    "pub_5": {
+      "num_qubits": 8,
+      "depth": 4,
+      "physical_circuit": "{\"__type__\": \"QuantumCircuit\", \"__value__\": \"eJwL9Az29gzhZmRkZIAAxtRCBu40Bg4gk4MBAZhAUlC2cXJmUXJpZomuobmhzQaIWHVtISNYCyNjIQMqYEQyAgSYoTQLlGaF0mxQmh2uEybDyIAdRLgnlqQWghXANDNhqgLpZnSOgqllQGhgxmN2qDFcQxpUiMMYDC7bwwUsml/MOKDCfgAuIKHrEvJbkfMACcYz4jb+buG5tD1C2IwnOmSYSQgZJoQG4pzOhNvpXO3rmP18OXCEDHHuAackJloHJR28S5zxzLiN16lZftan7r89BQmBlYSAZ0FoIM7pLLidHheTfy9oP4sDJQmBGWwHrYOSDt4lznhW3Mb/+Xpk+96Cp5QkBHYSAp4NoYE4p7PhdnqP59k2P6HvOAKeOPewgu2gdVDSwbvEGc8O12yEbnzIi0jp110PsRgPqz45GLADp8SioszUIkRViCj6EXmfrMjHU1HCFCME5u3auvry+f3UKd0xjL9xc23298oLpBiPp3THMP7AwS1Cq6bu2j9AlRl+7xLnHmgziMQmFo2DkuLSHcN4lnsPbq08+smeOqU7hvEvnIKvLwRmwwGqzPB7lzj3QFt9JLYoaRyUFJfuGMbPeh/07PRRZgfqlO4Yxi8R2K24wvA3KQFPzcoMv3eJcw+01Udii5LGQUlqRYnD+AN7EFlkc26vA7CFRnoziIQmFgPDfyQAUwAAiKWl6g==\"}",
+      "physical_observable": {
+        "paulis": [
+          "IIIIIIZZ",
+          "IIIIIZZI",
+          "IIIIZZII",
+          "IIIZZIII",
+          "IIZZIIII",
+          "IZZIIIII",
+          "ZZIIIIII",
+          "ZIIIIIIZ"
+        ],
+        "coeffs": [
+          "(0.125+0j)",
+          "(0.125+0j)",
+          "(0.125+0j)",
+          "(0.125+0j)",
+          "(0.125+0j)",
+          "(0.125+0j)",
+          "(0.125+0j)",
+          "(0.125+0j)"
+        ]
+      },
+      "final_qubit_layout": null,
+      "circuit_parameters": [
+        0.3,
+        -1.4464727375963786,
+        -2.8841484100105235,
+        -3.03774645687452,
+        1.9683349641197863,
+        2.5934197786078093,
+        0.6700123395200417,
+        1.441969420022903,
+        0.27410390540137985
+      ],
+      "expvals": {
+        "exponential": 1.0,
+        "polynomial_degree_2": 1.0,
+        "linear": 1.0,
+        "('exponential', 'linear')": 1.0
+      },
+      "job_ids": {
+        "exponential": "fe6d86e9-06a4-40f3-ae6e-31aa7d43ec83",
+        "polynomial_degree_2": "3713c011-16b7-404e-a771-0812962dfba3",
+        "linear": "7939d5af-95bc-4cb4-a119-a4fc255dc079",
+        "('exponential', 'linear')": "09c1d62f-4a39-47c6-aa2d-823b4b84413b"
+      }
+    },
+    "pub_6": {
+      "num_qubits": 8,
+      "depth": 8,
+      "physical_circuit": "{\"__type__\": \"QuantumCircuit\", \"__value__\": \"eJwL9Az29gzhZmRkZIAAxtRCBu40Bg4gk4MBAZhAUlB2bHJmUXJpZomuobmRzQGIWHVtISNYCyNjIQMqYEQyAgSYoTQLlGaF0mxQmh2uEybDyIAdRLgnlqQWghXANDNhqgLpZnSOgqllQGhgxmN2qDFcQxpUiMMYDC7bwwUsml/MOKDCfgAuIKHrEvJbkfMACcYz4jb+buG5tD1C2IwnOmSYSQgZJoQG4pzOhNvpXO3rmP18OXCEDHHuAackJloH5QhLOXSIXeKMZ8ZtvE7N8rM+df/tKUj3rCTEKwtCA3FOZ8Ht9LiY/HtB+1kcKElnzGA7aB2Uo+UCwzDOKHRIzMQZz4rb+D9fj2zfW/CUkmzOTkKyYUNoIM7pbLid3uN5ts1P6DtF2YoVbAetg3K0GGQYxhmFDomZOOPZ4ZqN0I0PeREp/brrIUVpc+Tm3aEbu7B+HAcDduCUWFSUmVqEaFkj2hqI4oisyMfT7oYpRgjM27V19eXz+6nTnMAw/sbNtdnfKy+QYjye5gSG8QcObhFaNXXX/gFqPeH3LnHuoWavCsM9wyh2Ka4DMYxnuffg1sqjn+ypUwdiGP/CKfj6QmDJMEBVPn7vEuceavZ8MNwzfPIuieN0oxkF1XiUjEJxcwLD+Fnvg56dPsrsQJ3mBIbxSwR2K64w/E1KtqJm6wm/d4lzDzV7PhjuGT7FIImDzqMZBdV4lIxCarsbh/EH9iDidXNurwOwDzpAvSr83iXOPYO0XCBx0HkEpRwSxukYGP4jAZgCAOcrHPg=\"}",
+      "physical_observable": {
+        "paulis": [
+          "IIIIIIZZ",
+          "IIIIIZZI",
+          "IIIIZZII",
+          "IIIZZIII",
+          "IIZZIIII",
+          "IZZIIIII",
+          "ZZIIIIII",
+          "ZIIIIIIZ"
+        ],
+        "coeffs": [
+          "(0.125+0j)",
+          "(0.125+0j)",
+          "(0.125+0j)",
+          "(0.125+0j)",
+          "(0.125+0j)",
+          "(0.125+0j)",
+          "(0.125+0j)",
+          "(0.125+0j)"
+        ]
+      },
+      "final_qubit_layout": null,
+      "circuit_parameters": [
+        0.3,
+        -1.4464727375963786,
+        -2.8841484100105235,
+        -3.03774645687452,
+        1.9683349641197863,
+        2.5934197786078093,
+        0.6700123395200417,
+        1.441969420022903,
+        0.27410390540137985
+      ],
+      "expvals": {
+        "exponential": 1.0,
+        "polynomial_degree_2": 1.0,
+        "linear": 1.0,
+        "('exponential', 'linear')": 1.0
+      },
+      "job_ids": {
+        "exponential": "fe6d86e9-06a4-40f3-ae6e-31aa7d43ec83",
+        "polynomial_degree_2": "3713c011-16b7-404e-a771-0812962dfba3",
+        "linear": "7939d5af-95bc-4cb4-a119-a4fc255dc079",
+        "('exponential', 'linear')": "09c1d62f-4a39-47c6-aa2d-823b4b84413b"
+      }
+    },
+    "pub_7": {
+      "num_qubits": 8,
+      "depth": 16,
+      "physical_circuit": "{\"__type__\": \"QuantumCircuit\", \"__value__\": \"eJwL9Az29gzhZmRkZIAAxtRCBu40Bg4gk4MBAZhAUlD2xuTMouTSzBJdQ3NjmwsQseraQkawFkbGQgZUwIhkBAgwQ2kWKM0KpdmgNDtcJ0yGkQE7iHBPLEktBCuAaWbCVAXSzegcBVPLgNDAjMfsUGO4hjSoEIcxGFy2hwtYNL+YcUCF/QBcQELXJeS3IucBEoxnxG383cJzaXuEsBlPdMgwkxAyTAgNxDmdCbfTudrXMfv5cuAIGeLcA05JTLQOyhGWcugQu8QZz4zbeJ2a5Wd96v7bU5DuWUmIVxaEBuKczoLb6XEx+feC9rM4UJLOmMF20DooR8sFhtFyYbiUC3TIu8QZz4rb+D9fj2zfW/CUklKNnYRUyYbQQJzT2XA7vcfzbJuf0HeKShFWsB20DsrRUp9htNQfLfVHS31U4wdjqU+Hkpk449nhmo3QjQ95ESn9uushRQXJaEWE3z2jFRF+94zcimi0ZB4tmaGaR0tmbO4ZLZnxu2c07+IxfjTvEudd4txDv7w7dGMXNrPFwYAdOCUWFWWmFiF6l4jmD6I4Iivy8fQ9YYoRAvN2bV19+fx+6rRwMIy/cXNt9vfKC6QYj6eFg2H8gYNbhFZN3bV/gBp0+L1LnHuoObKA4Z5hFLsU14EYxrPce3Br5dFP9tSpAzGMf+EUfH0hsGQYoCofv3eJcw81O2MY7hnNu6N5l2Eo5F2KWzgYxs96H/Ts9FFmB+q0cDCMXyKwW3GF4W9Scjo1G3T4vUuce6jZGcNwz2jJPFoyo7tntGTGY/xoyYzHeLJLZlL7njiMP7AHEfabc3sd9rOQUtBSc2QBv3eJc89oRYTfPaMVEX73DNKKiMTFzaOlPqrxo6X+aKnPMFrqD7ZSn8SNCaPlAqrxo+UCIfcM0nKBxI0JIyjlkLC4mYHhPxKAKQAAnL0K9A==\"}",
+      "physical_observable": {
+        "paulis": [
+          "IIIIIIZZ",
+          "IIIIIZZI",
+          "IIIIZZII",
+          "IIIZZIII",
+          "IIZZIIII",
+          "IZZIIIII",
+          "ZZIIIIII",
+          "ZIIIIIIZ"
+        ],
+        "coeffs": [
+          "(0.125+0j)",
+          "(0.125+0j)",
+          "(0.125+0j)",
+          "(0.125+0j)",
+          "(0.125+0j)",
+          "(0.125+0j)",
+          "(0.125+0j)",
+          "(0.125+0j)"
+        ]
+      },
+      "final_qubit_layout": null,
+      "circuit_parameters": [
+        0.3,
+        -1.4464727375963786,
+        -2.8841484100105235,
+        -3.03774645687452,
+        1.9683349641197863,
+        2.5934197786078093,
+        0.6700123395200417,
+        1.441969420022903,
+        0.27410390540137985
+      ],
+      "expvals": {
+        "exponential": 1.0,
+        "polynomial_degree_2": 1.0,
+        "linear": 1.0,
+        "('exponential', 'linear')": 1.0
+      },
+      "job_ids": {
+        "exponential": "fe6d86e9-06a4-40f3-ae6e-31aa7d43ec83",
+        "polynomial_degree_2": "3713c011-16b7-404e-a771-0812962dfba3",
+        "linear": "7939d5af-95bc-4cb4-a119-a4fc255dc079",
+        "('exponential', 'linear')": "09c1d62f-4a39-47c6-aa2d-823b4b84413b"
+      }
+    },
+    "pub_8": {
+      "num_qubits": 8,
+      "depth": 32,
+      "physical_circuit": "{\"__type__\": \"QuantumCircuit\", \"__value__\": \"eJztnUtoE0Ecxmd2Nw/tRXISeip4tIdaQQ9CQhUkqAXbCFZEKCWBIKIJ9SA+LkIF0aMgHgRB8IVeVIRaSQR7kqrQgw+w1IMS8CAI0kOF2mx3s9nuzt+Z7m6att9ctkxmvnwzO/P9ZgNlD2cHD2RzHZxztlR4vsQ6Ciy5+GeSOUWrf2S1GBoplkfOFke7e3bt3DO7VHn+YombXTgvMXfhTRL1oltXw7rGrGvcuiYaPe1POPMvR/cPj+ZLZgO7s+ZtVe/N9x6z2zKng05oH+ltdChYVcles0ynGxW7L9duVrclqo2Krd37cvNdm6oK8lws/7X0rjCR8pOXnhldYWY0p4OcdU1sffOVJ3r/oaRgZuT8mCtJi3oqN9jKacHdlZPXxfLbL9ybOnhpIR1g3ccU7qvhdJCzboitnzh+emagYmSCrDPd/I6opxK5wJAL6yUXWrB35eRjYvm/f968eHXme5BUSyisyrjTQc56XGz9WnZqrD81FyhFYuZ3RD2VSH2G1EfqI/Xd8u2Y+i1IZjn5RKPzjuXyudpQ58+r3wIFCUBE+wGIaD8AEe0HILIrACKAqLkARACRVQEQMYAIIAKIpOQBItoPQET7AYhoPwCR3HABIoDI6gwQ+fkBiGg/ABHtByCSGy5ABBBZnQEiPz8AEe0HIKL9IJkJeSQzIY9kpv0gmWk/2LuEPPau3HDl/LRu767du2v/91OS+Ze+4XK5mC87T5fO8ceJoxXdfOLZ027sVNwef/5o+n0lnBOOR/7T58cn5859UJEnTjge+errZ6mHN8Yrq3Sgo4cr5yfMXxY8ftbR3Q3MQI+8MTP75cHk73Q4DPTI1/oGP95ZTIZVQj49XDk/YT6Mefxg72LvsrWwdwOfcDzyt34N/Hg7qWfCOeF45O9uedl1v2deZaeHeaCjhyvnJ8yHMY8fJDOSebkfJDMhj2Qm5FeczKrPngL56oQz909PXc9UDJWgDfOXBXq4cn4AItoPQET7AYgiGi5A5JYHiAAiBhABRAI/AFFEwwWI3PIAEUDEACKASOAHIIpouACRWx4gAogYQAQQCfwARBENFyByywNEABEDiAAigZ82BZHiSxKQ+m55pD5SnyH12y31FV9wglxwyyMX/uenTXNB8QUnG2jlKLwkgbGFpmI3+Afq+uXN\"}",
+      "physical_observable": {
+        "paulis": [
+          "IIIIIIZZ",
+          "IIIIIZZI",
+          "IIIIZZII",
+          "IIIZZIII",
+          "IIZZIIII",
+          "IZZIIIII",
+          "ZZIIIIII",
+          "ZIIIIIIZ"
+        ],
+        "coeffs": [
+          "(0.125+0j)",
+          "(0.125+0j)",
+          "(0.125+0j)",
+          "(0.125+0j)",
+          "(0.125+0j)",
+          "(0.125+0j)",
+          "(0.125+0j)",
+          "(0.125+0j)"
+        ]
+      },
+      "final_qubit_layout": null,
+      "circuit_parameters": [
+        0.3,
+        -1.4464727375963786,
+        -2.8841484100105235,
+        -3.03774645687452,
+        1.9683349641197863,
+        2.5934197786078093,
+        0.6700123395200417,
+        1.441969420022903,
+        0.27410390540137985
+      ],
+      "expvals": {
+        "exponential": 1.0,
+        "polynomial_degree_2": 1.0,
+        "linear": 1.0,
+        "('exponential', 'linear')": 1.0
+      },
+      "job_ids": {
+        "exponential": "fe6d86e9-06a4-40f3-ae6e-31aa7d43ec83",
+        "polynomial_degree_2": "3713c011-16b7-404e-a771-0812962dfba3",
+        "linear": "7939d5af-95bc-4cb4-a119-a4fc255dc079",
+        "('exponential', 'linear')": "09c1d62f-4a39-47c6-aa2d-823b4b84413b"
+      }
+    },
+    "pub_9": {
+      "num_qubits": 8,
+      "depth": 64,
+      "physical_circuit": "{\"__type__\": \"QuantumCircuit\", \"__value__\": \"eJzt3U9IFGEYx/F39o9ueQlPQSehYx5Mog6BYkFIJaQGFhGIKEhE7WKH6M8lKIg6BtEhCIKyqEtFYIYb5CmswEN/IKlDIXQogvBgYO767s6OM+/TO+7O+qfvXFZm9338PbMzz2fGiwfau/a2d9c5jqMWNqc/reoGVGr+x5Ryt1juLf3jcN9gpu/U4FBj0/ZtO38u7DxzLu3klzhOWnk3p6REbovr14R+TerXGv1aW1xZeMdRwVvPnt6h/nT+A4XFMf+ncqudXYcLn1XugrhQ+2BzccGA3pVqzm+TLcUdOy5MX89urs0Wd2xs3N0927AuG6K8Yy7/Kf16YLQ+qLz1kYmHODIxd4Fd9Jg5+vpLD+Md+1OGI2OXJ38mxaI+lP/ZmVOFb9eufNxcfsvZOxP7zs+1lHHeJ0N8rwl3gV30hDn60SMnpjrHEq3lnGfx/O+I+lAyFxRzYa3MhSpcu3blk+byf36/fPr85NdyplptiLOyxl1gF73GHP1K+8TFjvqZsqZIMv87oj6UTH3F1GfqM/W95Vfi1K/CZLYrX1tcvHVx+e7pQ5u+X/5S1iABIjkPEMl5gEjOA0SFHUAERKUbEAGR3gFECoiACIisygORnAeI5DxAJOcBIrt2gQiI9GIgCsoDRHIeIJLzAJFdu0AERHoxEAXlASI5DxDJeYDIrl0gAiK9GIiC8gCRnAeI5DxAZNcuEAGRXgxEQXmASM4DRHIeILJrF4iASC8GoqA8QCTnASI5DxDZtQtEQKQXA1FQHiCS8wCRnAeI7NoFIiDSi4EoKA8QyXmASM4DRHbtAhEQ6cVAFJQHiOQ8QCTnASK7doEIiPRiIArKA0RyHiCS8wCRXbtABER6MRAF5QEiOQ8QyXmYzEJ5JrNQnsks52Eyy3m4doXyXLt27drlqd61u3q/3cJ/UUqp4K2tN5MZ7M+4T5fu7Y87jpb05QvPnoUPuztujjy5P/lmrDJ3OL7y7z88ODZz+m2Y8sIdjq989sXj+nvXRsaW6YZObtcuTyX/suDLs4a+3bIN9JVPTH3+ODz+q6UyBvrKT7d1vbs1PxmWiXy5Xbs8lXwY8+Xh2uXaVavh2i37DsdX/saPzm+vxuOtlbnD8ZW/veFZw92m2TBXeiVv6OR27fJU8mHMl4fJzGRenIfJLJRnMgvllzyZwz57GspnR91j/+j41daxRJhBW8m/LMjt2uUBIjkPEMl5gCiidoHIWx6IgEgBERAZ8gBRRO0Ckbc8EAGRAiIgMuQBoojaBSJveSACIgVEQGTIA0QRtQtE3vJABEQKiIDIkAeIImoXiLzlgQiIFBABkSEPEEXULhB5ywMRECkgAiJDHiCKqF0g8pYHIiBSQAREhjxAFFG7QOQtD0RApIAIiAx5gCiidoHIWx6IgEgBERAZ8gBRRO0Ckbc8EAGRAiIgMuQBoojaBSJveSACIgVEQGTIA0QRtQtE3vJABEQKiIDIkGeFQpQseTdo6ynGYeoz9Zn6/8rD1JfzVGfqW0+1MEAwF4TyzAU5T3XmgvV5H2aErIkzx/rI5P4T01zJVvjAXzivnIs=\"}",
+      "physical_observable": {
+        "paulis": [
+          "IIIIIIZZ",
+          "IIIIIZZI",
+          "IIIIZZII",
+          "IIIZZIII",
+          "IIZZIIII",
+          "IZZIIIII",
+          "ZZIIIIII",
+          "ZIIIIIIZ"
+        ],
+        "coeffs": [
+          "(0.125+0j)",
+          "(0.125+0j)",
+          "(0.125+0j)",
+          "(0.125+0j)",
+          "(0.125+0j)",
+          "(0.125+0j)",
+          "(0.125+0j)",
+          "(0.125+0j)"
+        ]
+      },
+      "final_qubit_layout": null,
+      "circuit_parameters": [
+        0.3,
+        -1.4464727375963786,
+        -2.8841484100105235,
+        -3.03774645687452,
+        1.9683349641197863,
+        2.5934197786078093,
+        0.6700123395200417,
+        1.441969420022903,
+        0.27410390540137985
+      ],
+      "expvals": {
+        "exponential": 1.0,
+        "polynomial_degree_2": 1.0,
+        "linear": 1.0,
+        "('exponential', 'linear')": 1.0
+      },
+      "job_ids": {
+        "exponential": "fe6d86e9-06a4-40f3-ae6e-31aa7d43ec83",
+        "polynomial_degree_2": "3713c011-16b7-404e-a771-0812962dfba3",
+        "linear": "7939d5af-95bc-4cb4-a119-a4fc255dc079",
+        "('exponential', 'linear')": "09c1d62f-4a39-47c6-aa2d-823b4b84413b"
+      }
+    },
+    "pub_10": {
+      "num_qubits": 16,
+      "depth": 4,
+      "physical_circuit": "{\"__type__\": \"QuantumCircuit\", \"__value__\": \"eJzFWF1IVEEUvnfv/q+7Lj5E4ItCT+E+iFA+GCsWlKVCapAlwSJrmA+2iz2I5UNCgvWQUBBBQpD/JT0oill7haRAzEQhMxILCiOhzSgRQ8vr3B1jdoaZ5s51Xs4y3vPNdz4Pd+53ThaWnSgs98iyLG0vORyRPNWS8+9PvwSXZetP4HdtVU206lJNfSD74IG8nu29xisRWUuR5Yj075J3QGwtBUQriDYQ7SA6QHSC6ALRDaIHxBQQvSD6QExNnKwjy1LydfpoqD4c0R7QD7egT21ly4fP6M9KMEEhYJ/KSSRU6wXlaGsmmNjIbV66o+5zqImNvYEj5euZLpUBXsbDv4+8qh5NSwZPrYzCoIwFJtBRt+Cpu1v6lZJiJ0YZOj5aJ1pES2lCuXTwCh4+63LXZFHTZpCjEWwMwlthAh11K576ucq6hdKYNZ+nERTtDNFSmlAuHbwND//75/Ohpxc/8TSCg0F4O0ygo27HU79ROHmtJG0VIzwdH5t2hmgpTSiXDt6Bhz+2VJH+tXWapxFcDMI7YQIddSee+sC7jo2mBRvXG8GhnSFaShPKpYN34eFnp84OvlS5rgYPg/BumEBH3Y2nPhqq2v9sg+8bwaWdIVpKE8qlg/fg4Y/78h77V+UkfUbdCF4G4VNgAh31FMK7MtQxPhnBfZzR8fFoZ4iW0oRy6eC9ePjKoqGy8J5kNw91I6QyCO+DCXTUfXjqaxUvpjuLJa5G8GpniJbShHLp4FPx8A3nFw/VXV2PofC6RfdLyVdBKBqtCUehXYb2EPoD+IEIvxDgFQHfEf/VJATTrT8MN9pHBvtmpmLGOEUEfu7to9rVhtcs8ASniMCrYwNpvbdHYrtkjMnl0vEBIxXGcY1gKbmdIgJvXVic7xlfCRrjFBH4pYKyN/dbPwR3yRiTy6XjAyZIjNMpwVJyO0UE/u630s8T40q+MU4RgX/gf5LZnb3OIryRxphcLh0fMEFinE4JlpLbKW4HNS+x4Y/Pxe/F7SyNQHCKCPuM6ysPP6bPszSCkcaYXC4dHzBBYpxOCZaS2yki8JWtWT8CzUxXA8EpIvBSfzh+q72N5U420hiTy6XjAyZIjNMpwVJyO0UEPrcx42Zv3zJLIxCcIgKvDi9/mbNMsDSCkcaYXC4dHzBBYpxOCZaS2yki8LPe6fK2ANPNQ3CKCHx+55q1p/s7SyMYaYzJ5dLxARMkxumUYCm5TTcCP7zSdaFl7BfLfwq4ZYZxjSRt7lj6A38ADa1tpg==\"}",
+      "physical_observable": {
+        "paulis": [
+          "IIIIIIIIIIIIIIZZ",
+          "IIIIIIIIIIIIIZZI",
+          "IIIIIIIIIIIIZZII",
+          "IIIIIIIIIIIZZIII",
+          "IIIIIIIIIIZZIIII",
+          "IIIIIIIIIZZIIIII",
+          "IIIIIIIIZZIIIIII",
+          "IIIIIIIZZIIIIIII",
+          "IIIIIIZZIIIIIIII",
+          "IIIIIZZIIIIIIIII",
+          "IIIIZZIIIIIIIIII",
+          "IIIZZIIIIIIIIIII",
+          "IIZZIIIIIIIIIIII",
+          "IZZIIIIIIIIIIIII",
+          "ZZIIIIIIIIIIIIII",
+          "ZIIIIIIIIIIIIIIZ"
+        ],
+        "coeffs": [
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)"
+        ]
+      },
+      "final_qubit_layout": null,
+      "circuit_parameters": [
+        0.3,
+        -1.4464727375963786,
+        -2.8841484100105235,
+        -3.03774645687452,
+        1.9683349641197863,
+        2.5934197786078093,
+        0.6700123395200417,
+        1.441969420022903,
+        0.27410390540137985,
+        2.7336406607023154,
+        1.9845664104768632,
+        -3.1243861495570098,
+        2.2456372993781644,
+        -2.930568260297326,
+        1.4429677267223928,
+        -2.0379158390962826,
+        2.281920468786123
+      ],
+      "expvals": {
+        "exponential": 1.0,
+        "polynomial_degree_2": 1.0,
+        "linear": 1.0,
+        "('exponential', 'linear')": 1.0
+      },
+      "job_ids": {
+        "exponential": "fe6d86e9-06a4-40f3-ae6e-31aa7d43ec83",
+        "polynomial_degree_2": "3713c011-16b7-404e-a771-0812962dfba3",
+        "linear": "7939d5af-95bc-4cb4-a119-a4fc255dc079",
+        "('exponential', 'linear')": "09c1d62f-4a39-47c6-aa2d-823b4b84413b"
+      }
+    },
+    "pub_11": {
+      "num_qubits": 16,
+      "depth": 8,
+      "physical_circuit": "{\"__type__\": \"QuantumCircuit\", \"__value__\": \"eJztWk9IVEEYn7f//7jr4iECLwqdwj2IBz0YKxaUpUJqkCXBImtYB9vFDmJ5SEiwDgkFESQE+b+kg6KYtU9oKRAzUciMxILCSGgzSsTQ8vnejo/ZN8w0b9d6vrl8yzjzm9/M+34f4/fN8aLyY0UVTo7jwFbjAkHgrAG2Pz89ADbD5p/E35Hq2lD1xdp6b3Zubv4wL/Q1Xg5ywhSOCwJ547ZBbDajaE2iNYvWIlqraG2itYvWIVqnaFNE6xKtW7SpsZUlZA7EbycP++sDQWGAtLgBHbU5mzt4ShoL4AQjBvtETmxCjbShHKFN+2Idec2Lt/l9Vj7Wsdd7qGIt085TwHPK8O+CL2tG0+LBE5+MkeJkDHACGXWDMnVHS7+xtMSmcDJkfARPNCT6KHeZ5yTh65LBG5Xhsy51TRQ3bfgY/N5M8V1NcAIZdZMy9TNVdfNlYVMBi58ZhTUSfZR6XAAaFkoSnJkM3qwM/+vHs6EnFz6yyNxK4TYWOIGMukWZ+vWiiaulaStMsjILayT6KPUwCDQslCQ4Mxm8VRn+yGJl+pfWKRaZ2yncxgYnkFG3KVMfeNux3jRvZnJjq7BGoo9SD4NAw0JJgjOTwduV4WcmTw++4Jku7U4Kt3HACWTUHcrUR/3V+5+us11K7cIaiT5KPQwCDQslCc5MBu9Uhj/qzn/kWeHiHA6xzF0UbpMCJ5BRT8GEb39HZCLIlgNyCmsk+ij1MAg0LJQkODMZvEsZvqp4qDywJ95Vh1jmqRRu44YTyKi7lamvVj6f6iwBTG7sEtZI9FHqYRBoWChJcGYy+FRl+IazCwfqrqyFWXxh92r3//26Uo3WA+K3Qn8oVBsIwaoXrAPAVCHMJsB/OOCdBIatv3ISTO1MGgw72kcG+6Ynw+qUBBD42TcPz680vKKBx5QEEHh+bCCt99ZIeIcqIPjtkvFRszKK8NHQ12XOYyPwpvmFuZ7Isk+dPDYCv1hY/vpe63vfDqXt8dsl46Nm9RLhox3tUr610YUih5cJhTmPjcDf+Vr2aTxiLFAnj43A3/c8zuzOXqORlZppe/x2yfioWb1E+GgnDFI+HNOFIoeXCYU5j71l+PxYhyc6G70btdCwx+SxEfYZ15YffEifo3EbNdP2+O2S8VGzeikN1mAYpHwnpwtFzl4mFOY8NgJf1Zr13dtMdRfB5LEReNAfiN5sb6O5BKqZtsdvl4yPmtVLhI92wiDlOzldKHJ4mVCY89gIfF5jxo3eviUa9pg8NgLPDy99njWM08hczbQ9frtkfNSsXiJ8tBMGKd/J6UKRw8uEwlwSQOBnXFMVbV6qqw6mJIDAF3Sumnq6v9G4sZoVEPx2yfioWb1E+GgnDFK+k9OFIoeXCYW5dobADy93nWsZ+0njZ2pWRvHbJePzj8YFyodju8hzKN7aALCxrUkDfgNYqpXi\"}",
+      "physical_observable": {
+        "paulis": [
+          "IIIIIIIIIIIIIIZZ",
+          "IIIIIIIIIIIIIZZI",
+          "IIIIIIIIIIIIZZII",
+          "IIIIIIIIIIIZZIII",
+          "IIIIIIIIIIZZIIII",
+          "IIIIIIIIIZZIIIII",
+          "IIIIIIIIZZIIIIII",
+          "IIIIIIIZZIIIIIII",
+          "IIIIIIZZIIIIIIII",
+          "IIIIIZZIIIIIIIII",
+          "IIIIZZIIIIIIIIII",
+          "IIIZZIIIIIIIIIII",
+          "IIZZIIIIIIIIIIII",
+          "IZZIIIIIIIIIIIII",
+          "ZZIIIIIIIIIIIIII",
+          "ZIIIIIIIIIIIIIIZ"
+        ],
+        "coeffs": [
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)"
+        ]
+      },
+      "final_qubit_layout": null,
+      "circuit_parameters": [
+        0.3,
+        -1.4464727375963786,
+        -2.8841484100105235,
+        -3.03774645687452,
+        1.9683349641197863,
+        2.5934197786078093,
+        0.6700123395200417,
+        1.441969420022903,
+        0.27410390540137985,
+        2.7336406607023154,
+        1.9845664104768632,
+        -3.1243861495570098,
+        2.2456372993781644,
+        -2.930568260297326,
+        1.4429677267223928,
+        -2.0379158390962826,
+        2.281920468786123
+      ],
+      "expvals": {
+        "exponential": 1.0,
+        "polynomial_degree_2": 1.0,
+        "linear": 1.0,
+        "('exponential', 'linear')": 1.0
+      },
+      "job_ids": {
+        "exponential": "fe6d86e9-06a4-40f3-ae6e-31aa7d43ec83",
+        "polynomial_degree_2": "3713c011-16b7-404e-a771-0812962dfba3",
+        "linear": "7939d5af-95bc-4cb4-a119-a4fc255dc079",
+        "('exponential', 'linear')": "09c1d62f-4a39-47c6-aa2d-823b4b84413b"
+      }
+    },
+    "pub_12": {
+      "num_qubits": 16,
+      "depth": 16,
+      "physical_circuit": "{\"__type__\": \"QuantumCircuit\", \"__value__\": \"eJztXE9IVEEcnrd/3F3X1cVDBF4UOoUexEMejBULylIhNciSQGQN62C72EEsDwkJ1iGhIIKEIP+XdNAUs1whKRAzUciMxILCSMiMEjG09vl2n+u8N840b//o/t7BWZ5vvvlm3sz3/dz5OSdyi47nFlsFQUAbl+B0IWsFMv/7aEfypfP+SnqiprzSXX6psjot/UBm1hOPeLP2iksQqwiCCwVewiYI76WXSoNUGqUyRipNUmmWSotUxkqlVSrjpNImlfFSmeBv2YcsIOXr1JGyaqdLfMDXuA5/yltbOHTa9yySK+gJ2Ccz/BUqfB3KEK9Jh/9GZv38Hc8+k8d/Y2/a4eLVFIuHAV5Qh//gel0xmKgETz0yeoaR0ckV6Kjr1KnHNnTrC/LNKiNDx0ecibpgD2WUzZwQvF06eL06fOrltrG8unUHx7w3MrxXg1yBjrpBnfrZ0qrZwiFDNs8804ttBHsoQRcQ6MJu0YUQrF06eKM6/J9fL/qeXfzMo2omhlkZI1egox6jTv1G7ti1gsRlLhUxim0EeyhB9RGoPqg+qH4gfCSqfgiUmQ7epA5/dL4k6VvjBI9nWRjWlFmuQEfdrE69533LWt2skUuTTWIbwR5K8HQEng6eDiYHJqcMHzaTC4ER0cFb1OGnxs/0vvJwfVlmZViysXIFOuqx6tQHy8r3P1/jkxCL2EawhxJCGAQhDIQwYHJgcsrwYTO5EBgRHbxVHf5YfNZj+7KgMDjUFm1jWLJxcgU66nGEWVnWMjLm4vumzCq2EeyhhBAGQQgDIQyYHJicMnzYTC4ERkQHb1OHL83rK3LuUZqY1BadwLBk4+UKdNTj1amvlLycaM1HXBZkE9sI9lBCCIMghIEQBkwOTE4ZPmwmFwIjooNPUIevOTd3sOrq6hDPOgTfJfMB3yXziV7fBWUGZVaDB2VGoMzb8YG1S4CHtUvXXTo+oVu7O/ft+v5L046Ur5wyt7vS6fbib2Q6e3/o5B1h+Ytn+e9bOSKRFUJ+H6yThJAv7XtYvtE80Ns1OT6kTSoZBj/97tGF5Zo3LPCEVDIM3jPck9h5e2AoTJlz5O7S8dEyGx7js4veLncOBQZvmJ2b6RhZcmiTQ4HBz+cUvb3f+NERppQRcnfp+GiZ9YrxgbULaxfthLXLvTWMwd/9XvhldESfrc3WMAb/wP40pT19lWWla7kTTu4uHR8tk/kwPqDMoMxb+YAyE+BBmQnw/63M3PuZG4Uny3/Dvji9eG8xhoU9YT8TY598fenhp6QZFp3ScvuW3F06PlpmoPkeBt+l5AO+Gy2+y3j+GJhcIDyYXISYHPfWMAZf2pj6M62eaeYQtoYxeNTtXLzV3MSyZLXcCSd3l46PlhloGB8IYSCE2conOkMYxoMwweQC4cHkIsTkuHMoMPjM2uSbnV0LLOwJORQYvKd/4eu0bpTForVMGSF3l46Plsl8GB8IYSCE2conOkMYxjN7weQC2YPJRYjJcaeSYfBTtonipjSmiUlIJcPgs1tXDB3tP1gsSMvMOXJ36fhomfWK8YEQBkKYrXyiM4RhPIAaTC4QHkwuQkyOO18ag+9fajvfMPybRQO1zIYnd5eOD3g6mQ94OplPhHo64wHUoPqB8KD6oPoIVD/SVJ/xzF7QhUB40IXt+ESoLjAehBlFM4fh/DGE1jddvgf+Ar4v47o=\"}",
+      "physical_observable": {
+        "paulis": [
+          "IIIIIIIIIIIIIIZZ",
+          "IIIIIIIIIIIIIZZI",
+          "IIIIIIIIIIIIZZII",
+          "IIIIIIIIIIIZZIII",
+          "IIIIIIIIIIZZIIII",
+          "IIIIIIIIIZZIIIII",
+          "IIIIIIIIZZIIIIII",
+          "IIIIIIIZZIIIIIII",
+          "IIIIIIZZIIIIIIII",
+          "IIIIIZZIIIIIIIII",
+          "IIIIZZIIIIIIIIII",
+          "IIIZZIIIIIIIIIII",
+          "IIZZIIIIIIIIIIII",
+          "IZZIIIIIIIIIIIII",
+          "ZZIIIIIIIIIIIIII",
+          "ZIIIIIIIIIIIIIIZ"
+        ],
+        "coeffs": [
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)"
+        ]
+      },
+      "final_qubit_layout": null,
+      "circuit_parameters": [
+        0.3,
+        -1.4464727375963786,
+        -2.8841484100105235,
+        -3.03774645687452,
+        1.9683349641197863,
+        2.5934197786078093,
+        0.6700123395200417,
+        1.441969420022903,
+        0.27410390540137985,
+        2.7336406607023154,
+        1.9845664104768632,
+        -3.1243861495570098,
+        2.2456372993781644,
+        -2.930568260297326,
+        1.4429677267223928,
+        -2.0379158390962826,
+        2.281920468786123
+      ],
+      "expvals": {
+        "exponential": 1.0,
+        "polynomial_degree_2": 1.0,
+        "linear": 1.0,
+        "('exponential', 'linear')": 1.0
+      },
+      "job_ids": {
+        "exponential": "fe6d86e9-06a4-40f3-ae6e-31aa7d43ec83",
+        "polynomial_degree_2": "3713c011-16b7-404e-a771-0812962dfba3",
+        "linear": "7939d5af-95bc-4cb4-a119-a4fc255dc079",
+        "('exponential', 'linear')": "09c1d62f-4a39-47c6-aa2d-823b4b84413b"
+      }
+    },
+    "pub_13": {
+      "num_qubits": 16,
+      "depth": 32,
+      "physical_circuit": "{\"__type__\": \"QuantumCircuit\", \"__value__\": \"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\"}",
+      "physical_observable": {
+        "paulis": [
+          "IIIIIIIIIIIIIIZZ",
+          "IIIIIIIIIIIIIZZI",
+          "IIIIIIIIIIIIZZII",
+          "IIIIIIIIIIIZZIII",
+          "IIIIIIIIIIZZIIII",
+          "IIIIIIIIIZZIIIII",
+          "IIIIIIIIZZIIIIII",
+          "IIIIIIIZZIIIIIII",
+          "IIIIIIZZIIIIIIII",
+          "IIIIIZZIIIIIIIII",
+          "IIIIZZIIIIIIIIII",
+          "IIIZZIIIIIIIIIII",
+          "IIZZIIIIIIIIIIII",
+          "IZZIIIIIIIIIIIII",
+          "ZZIIIIIIIIIIIIII",
+          "ZIIIIIIIIIIIIIIZ"
+        ],
+        "coeffs": [
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)"
+        ]
+      },
+      "final_qubit_layout": null,
+      "circuit_parameters": [
+        0.3,
+        -1.4464727375963786,
+        -2.8841484100105235,
+        -3.03774645687452,
+        1.9683349641197863,
+        2.5934197786078093,
+        0.6700123395200417,
+        1.441969420022903,
+        0.27410390540137985,
+        2.7336406607023154,
+        1.9845664104768632,
+        -3.1243861495570098,
+        2.2456372993781644,
+        -2.930568260297326,
+        1.4429677267223928,
+        -2.0379158390962826,
+        2.281920468786123
+      ],
+      "expvals": {
+        "exponential": 1.0,
+        "polynomial_degree_2": 1.0,
+        "linear": 1.0,
+        "('exponential', 'linear')": 1.0
+      },
+      "job_ids": {
+        "exponential": "fe6d86e9-06a4-40f3-ae6e-31aa7d43ec83",
+        "polynomial_degree_2": "3713c011-16b7-404e-a771-0812962dfba3",
+        "linear": "7939d5af-95bc-4cb4-a119-a4fc255dc079",
+        "('exponential', 'linear')": "09c1d62f-4a39-47c6-aa2d-823b4b84413b"
+      }
+    },
+    "pub_14": {
+      "num_qubits": 16,
+      "depth": 64,
+      "physical_circuit": "{\"__type__\": \"QuantumCircuit\", \"__value__\": \"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\"}",
+      "physical_observable": {
+        "paulis": [
+          "IIIIIIIIIIIIIIZZ",
+          "IIIIIIIIIIIIIZZI",
+          "IIIIIIIIIIIIZZII",
+          "IIIIIIIIIIIZZIII",
+          "IIIIIIIIIIZZIIII",
+          "IIIIIIIIIZZIIIII",
+          "IIIIIIIIZZIIIIII",
+          "IIIIIIIZZIIIIIII",
+          "IIIIIIZZIIIIIIII",
+          "IIIIIZZIIIIIIIII",
+          "IIIIZZIIIIIIIIII",
+          "IIIZZIIIIIIIIIII",
+          "IIZZIIIIIIIIIIII",
+          "IZZIIIIIIIIIIIII",
+          "ZZIIIIIIIIIIIIII",
+          "ZIIIIIIIIIIIIIIZ"
+        ],
+        "coeffs": [
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)",
+          "(0.0625+0j)"
+        ]
+      },
+      "final_qubit_layout": null,
+      "circuit_parameters": [
+        0.3,
+        -1.4464727375963786,
+        -2.8841484100105235,
+        -3.03774645687452,
+        1.9683349641197863,
+        2.5934197786078093,
+        0.6700123395200417,
+        1.441969420022903,
+        0.27410390540137985,
+        2.7336406607023154,
+        1.9845664104768632,
+        -3.1243861495570098,
+        2.2456372993781644,
+        -2.930568260297326,
+        1.4429677267223928,
+        -2.0379158390962826,
+        2.281920468786123
+      ],
+      "expvals": {
+        "exponential": 1.0,
+        "polynomial_degree_2": 1.0,
+        "linear": 1.0,
+        "('exponential', 'linear')": 1.0
+      },
+      "job_ids": {
+        "exponential": "fe6d86e9-06a4-40f3-ae6e-31aa7d43ec83",
+        "polynomial_degree_2": "3713c011-16b7-404e-a771-0812962dfba3",
+        "linear": "7939d5af-95bc-4cb4-a119-a4fc255dc079",
+        "('exponential', 'linear')": "09c1d62f-4a39-47c6-aa2d-823b4b84413b"
+      }
+    }
+  }
+}
