@@ -28,6 +28,8 @@ max_davidson_cycles = args["max_davidson_cycles"]
 
 i_data = JSONDecoder().decode(data)
 
+# i_data has all of the information needed from the local program to pick up where the computation left off
+# after its submission to the remote environment.
 (bitstring_matrix_full, probs_arr_full, hcore, eri, open_shell, spin_sq, max_davidson_cycles, nuclear_repulsion_energy, num_elec_a, num_elec_b) = i_data
 
 bitstring_matrix_full = np.array(bitstring_matrix_full)
@@ -70,7 +72,8 @@ for i in range(iterations):
         rand_seed=rng,
     )
 
-    # Parallelize eigenstate solvers
+    # Parallelize eigenstate solvers: 
+
     packages = [(batch, hcore, eri, open_shell, spin_sq, max_davidson_cycles, nuclear_repulsion_energy) for batch in batches]
 
     # fan‑out: spawn one worker per input tuple
@@ -97,10 +100,11 @@ for i in range(iterations):
     s_hist[i, :] = s_tmp
     occupancy_hist.append(avg_occupancy)
 
+# Numpy arrays are not JSON serializable, convert them to List objects before using the JSONEncoder
 o_data = (e_hist.tolist(), s_hist.tolist(), occupancy_hist)
 
 # Encode JSON
 out_e = JSONEncoder().encode(o_data)
 
 # JSON-safe package
-save_result({"outputs": out_e})     # single JSON blob returned to client
+save_result({"outputs": out_e})  # single JSON blob returned to client
